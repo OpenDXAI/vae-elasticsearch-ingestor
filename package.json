@@ -39,10 +39,15 @@
     "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=14.17.5"
   },
   "dependencies": {
-    "@bitauth/libauth": "^1.17.1"
+    "@bitauth/libauth": "^1.17.1",
+    "@elastic/elasticsearch": "7.13",
+    "@types/node-fetch": "^2.5.12",
+    "csv-parse": "^4.16.2",
+    "csvtojson": "^2.0.10",
+    "node-fetch": "^2.0.0"
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
